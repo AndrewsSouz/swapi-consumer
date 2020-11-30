@@ -1,13 +1,13 @@
-package com.studies.consumer;
+package com.studies.persistence;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class ConsumerApplication {
+public class PersistenceApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(ConsumerApplication.class, args);
+        SpringApplication.run(PersistenceApplication.class, args);
     }
 
 }

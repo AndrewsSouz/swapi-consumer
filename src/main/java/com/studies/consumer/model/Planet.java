@@ -6,7 +6,7 @@ import lombok.Data;
 
 @Data
 @JsonNaming(PropertyNamingStrategy.SnakeCaseStrategy.class)
-public class Planets {
+public class Planet {
     private String name;
     private String rotationPeriod;
     private String orbitalPeriod;

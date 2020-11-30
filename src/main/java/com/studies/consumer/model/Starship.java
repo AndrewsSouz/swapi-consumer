@@ -6,7 +6,7 @@ import lombok.Data;
 
 @Data
 @JsonNaming(PropertyNamingStrategy.SnakeCaseStrategy.class)
-public class Vehicles {
+public class Starship {
     private String name;
     private String model;
     private String manufacturer;
@@ -17,5 +17,6 @@ public class Vehicles {
     private String passengers;
     private String cargoCapacity;
     private String consumables;
-    private String vehicleClass;
+    private String hyperdriveRating;
+    private String starshipClass;
 }

@@ -1,7 +1,7 @@
 package com.studies.consumer.service;
 
 import com.studies.consumer.model.*;
-import com.studies.consumer.model.model_wrappers.*;
+import com.studies.consumer.model.model_wrapper.*;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
@@ -60,24 +60,24 @@ public class ConsumerService {
         return people;
     }
 
-    public Planets callPlanet(String endpoint, String id) {
-        Planets planet = restTemplate.getForObject(joinUrl(endpoint, id), Planets.class);
+    public Planet callPlanet(String endpoint, String id) {
+        Planet planet = restTemplate.getForObject(joinUrl(endpoint, id), Planet.class);
         return planet;
     }
 
-    public Species callSpecies(String endpoint, String id) {
-        Species species = restTemplate.getForObject(joinUrl(endpoint, id), Species.class);
+    public Specie callSpecies(String endpoint, String id) {
+        Specie species = restTemplate.getForObject(joinUrl(endpoint, id), Specie.class);
         return species;
     }
 
-    public Starships callStarships(String endpoint, String id) {
-        Starships starships = restTemplate.getForObject(joinUrl(endpoint, id), Starships.class);
-        return starships;
+    public Starship callStarships(String endpoint, String id) {
+        Starship starship = restTemplate.getForObject(joinUrl(endpoint, id), Starship.class);
+        return starship;
     }
 
-    public Vehicles callVehicles(String endpoint, String id) {
-        Vehicles vehicles = restTemplate.getForObject(joinUrl(endpoint, id), Vehicles.class);
-        return vehicles;
+    public Vehicle callVehicles(String endpoint, String id) {
+        Vehicle vehicle = restTemplate.getForObject(joinUrl(endpoint, id), Vehicle.class);
+        return vehicle;
     }
 
     public Films callFilms(String endpoint, String id) {
