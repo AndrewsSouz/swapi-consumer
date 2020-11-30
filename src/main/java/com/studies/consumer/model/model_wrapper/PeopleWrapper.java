@@ -1,4 +1,4 @@
-package com.studies.consumer.model.model_wrappers;
+package com.studies.consumer.model.model_wrapper;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.databind.PropertyNamingStrategy;
