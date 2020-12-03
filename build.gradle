@@ -49,14 +49,10 @@ allprojects {
 	}
 }
 
-project(":swapi-consumer"){
+project(":api-consumer"){
 
 	dependencies {
-		compile project(":persistence")
-	}
-
-	application{
-		mainClass = 'com.studies.consumer.ConsumerApplication'
+		compile project(":api-persistence")
 	}
 
 }

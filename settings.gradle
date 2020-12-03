@@ -1,5 +1,5 @@
-rootProject.name = ('consumer')
+rootProject.name = ('swapi-consumer')
 
-include 'persistence'
-include 'swapi-consumer'
+include 'api-persistence'
+include 'api-consumer'
 
