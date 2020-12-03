@@ -6,7 +6,7 @@ to let the work simple and easy.
 
 My next TODOS:
 
-==> Make it a Gradle Multiproject and implent another micro-service to take the data retrieved from the api and persist
+==> Make it a Gradle Multiproject **(OK)** and implement another micro-service to take the data retrieved from the api and persist
 in a local MongoDB.
 
 ==> Store the application and db in Docker containers to up it with docker compose.
