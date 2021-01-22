@@ -15,76 +15,60 @@ public class SwapiConsumerService {
 
     //URL ASSEMBLERS
     public String joinUrl(String endpoint) {
-        String url = api + endpoint + "/";
-        return url;
+        return api + endpoint + "/";
     }
 
     public String joinUrl(String endpoint, String id) {
-        String url = api + endpoint + "/" + id + "/";
-        return url;
+        return api + endpoint + "/" + id + "/";
     }
 
     //THESE METHODS CALL ENTIRE COLLECTION OF EACH ENDPOINT
     public PeopleWrapper callAllPeople(String endpoint) {
-        PeopleWrapper peoples = restTemplate.getForObject(joinUrl(endpoint), PeopleWrapper.class);
-        return peoples;
+        return restTemplate.getForObject(joinUrl(endpoint), PeopleWrapper.class);
     }
 
     public FilmWrapper callAllfilms(String endpoint) {
-        FilmWrapper films = restTemplate.getForObject(joinUrl(endpoint), FilmWrapper.class);
-        return films;
+        return restTemplate.getForObject(joinUrl(endpoint), FilmWrapper.class);
     }
 
     public PlanetWrapper callAllPlanets(String endpoint) {
-        PlanetWrapper planets = restTemplate.getForObject(joinUrl(endpoint), PlanetWrapper.class);
-        return planets;
+        return restTemplate.getForObject(joinUrl(endpoint), PlanetWrapper.class);
     }
 
     public SpecieWrapper callAllSpecies(String endpoint) {
-        SpecieWrapper species = restTemplate.getForObject(joinUrl(endpoint), SpecieWrapper.class);
-        return species;
+        return restTemplate.getForObject(joinUrl(endpoint), SpecieWrapper.class);
     }
 
     public StarshipWrapper callAllStarships(String endpoint) {
-        StarshipWrapper starships = restTemplate.getForObject(joinUrl(endpoint), StarshipWrapper.class);
-        return starships;
+        return restTemplate.getForObject(joinUrl(endpoint), StarshipWrapper.class);
     }
 
     public VehicleWrapper callAllVehicles(String endpoint) {
-        VehicleWrapper vehicles = restTemplate.getForObject(joinUrl(endpoint), VehicleWrapper.class);
-        return vehicles;
+        return restTemplate.getForObject(joinUrl(endpoint), VehicleWrapper.class);
     }
 
     //THESE METHODS CALL A SINGLE DOCUMENT OF THE DESIGNED ENDPOINT
     public People callPeople(String endpoint, String id) {
-        People people = restTemplate.getForObject(joinUrl(endpoint, id), People.class);
-        return people;
+        return restTemplate.getForObject(joinUrl(endpoint, id), People.class);
     }
 
     public Planet callPlanet(String endpoint, String id) {
-        Planet planet = restTemplate.getForObject(joinUrl(endpoint, id), Planet.class);
-        return planet;
+        return restTemplate.getForObject(joinUrl(endpoint, id), Planet.class);
     }
 
     public Specie callSpecies(String endpoint, String id) {
-        Specie species = restTemplate.getForObject(joinUrl(endpoint, id), Specie.class);
-        return species;
+        return restTemplate.getForObject(joinUrl(endpoint, id), Specie.class);
     }
 
     public Starship callStarships(String endpoint, String id) {
-        Starship starship = restTemplate.getForObject(joinUrl(endpoint, id), Starship.class);
-        return starship;
+        return restTemplate.getForObject(joinUrl(endpoint, id), Starship.class);
     }
 
     public Vehicle callVehicles(String endpoint, String id) {
-        Vehicle vehicle = restTemplate.getForObject(joinUrl(endpoint, id), Vehicle.class);
-        return vehicle;
+        return restTemplate.getForObject(joinUrl(endpoint, id), Vehicle.class);
     }
 
     public Films callFilms(String endpoint, String id) {
-        Films film = restTemplate.getForObject(joinUrl(endpoint, id), Films.class);
-        return film;
+        return restTemplate.getForObject(joinUrl(endpoint, id), Films.class);
     }
-
-
 }
