@@ -1,4 +1,4 @@
-package com.studies.technocorp.exception;
+package com.studies.technocorp.exception.CustomException;
 
 import lombok.Data;
 import org.springframework.http.HttpStatus;
